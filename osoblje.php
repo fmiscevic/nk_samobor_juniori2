@@ -29,7 +29,7 @@ $result = $conn->query($sql);
                                 <td class="simple-name"><?php echo htmlspecialchars($row['ime'] . ' ' . $row['prezime']); ?></td>
                                 <td><?php echo htmlspecialchars($row['uloga']); ?></td>
                                 <td>
-                                    <?php if ($row['status_u_klubu'] === 'otisao'): ?>
+                                    <?php if ($row['status_u_klubu'] === 'otišao'): ?>
                                         <span class="status-otisao"><?php echo htmlspecialchars($row['status_u_klubu']); ?></span>
                                     <?php else: ?>
                                         <span class="status-aktivan"><?php echo htmlspecialchars($row['status_u_klubu']); ?></span>

@@ -223,17 +223,11 @@ a {
     max-width: 900px;
 }
 
-.section-anchor {
-    scroll-margin-top: 110px;
-}
-
 /* GRID / CARDS */
 .cards-2,
 .cards-3,
 .stats-grid,
-.kits-grid,
-.contact-grid,
-.footer-grid {
+.kits-grid {
     display: grid;
     gap: 22px;
 }
@@ -254,36 +248,22 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.contact-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.footer-grid {
-    grid-template-columns: 1.3fr 1fr;
-}
-
-.card,
 .info-card,
 .stat-card,
-.kit-card,
-.contact-box {
+.kit-card {
     background: var(--card);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     overflow: hidden;
 }
 
-.card,
 .info-card,
-.kit-card,
-.contact-box {
+.kit-card {
     padding: 24px;
 }
 
 .info-card h3,
-.kit-card h3,
-.card h3,
-.contact-box h3 {
+.kit-card h3 {
     margin-top: 0;
     color: var(--blue-dark);
 }
@@ -317,10 +297,12 @@ a {
     margin-top: 24px;
 }
 
-.small-note,
-.note {
-    font-size: 14px;
-    color: #5b6780;
+.horizontal-image {
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
 }
 
 /* MATCH CARDS */
@@ -475,35 +457,6 @@ table.compact-table td {
     color: var(--blue-dark);
 }
 
-.person-cell {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    min-width: 240px;
-}
-
-.person-photo {
-    width: 52px;
-    height: 52px;
-    border-radius: 12px;
-    object-fit: cover;
-    background: #dde6f5;
-    flex-shrink: 0;
-}
-
-.person-meta strong {
-    display: block;
-    color: var(--blue-dark);
-    font-size: 15px;
-}
-
-.person-meta span {
-    display: block;
-    font-size: 13px;
-    color: #657089;
-    margin-top: 4px;
-}
-
 .club-cell {
     display: flex;
     align-items: center;
@@ -518,7 +471,6 @@ table.compact-table td {
 
 .badge-home,
 .badge-away,
-.badge-status,
 .status-aktivan,
 .status-otisao {
     display: inline-block;
@@ -538,7 +490,6 @@ table.compact-table td {
     color: #7a6200;
 }
 
-.badge-status,
 .status-aktivan {
     background: #eef3ff;
     color: var(--blue-main);
@@ -558,46 +509,7 @@ table.compact-table td {
     font-weight: 800;
 }
 
-/* CONTACT */
-.contact-hero {
-    position: relative;
-    min-height: 300px;
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    margin-top: 28px;
-}
-
-.contact-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(rgba(13, 34, 87, 0.68), rgba(13, 34, 87, 0.78)),
-        url('../images/hero/hero-bg.jpg') center/cover no-repeat;
-}
-
-.contact-hero-content {
-    position: relative;
-    z-index: 1;
-    color: white;
-    padding: 48px 40px;
-}
-
-.contact-link {
-    color: var(--blue-main);
-    font-weight: 700;
-}
-
-.horizontal-image {
-    width: 100%;
-    max-height: 260px;
-    object-fit: cover;
-    border-radius: 18px;
-    display: block;
-}
-
-/* KONTAKT STRANICA NOVA */
+/* KONTAKT STRANICA */
 .contact-hero-section {
     min-height: 340px;
     background:
@@ -618,7 +530,7 @@ table.compact-table td {
 
 .contact-badge {
     display: inline-block;
-    background: rgba(255,255,255,0.18);
+    background: rgba(255, 255, 255, 0.18);
     color: var(--yellow);
     font-weight: 900;
     font-size: 15px;
@@ -763,14 +675,20 @@ table.compact-table td {
     padding: 48px 0;
 }
 
-.footer-modern {
+.footer-grid {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
     gap: 42px;
 }
 
-.footer-brand {
+.footer-left {
     max-width: 430px;
+}
+
+.footer-right h3 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 18px;
 }
 
 .footer-logo {
@@ -778,69 +696,39 @@ table.compact-table td {
     margin-bottom: 16px;
 }
 
-.footer-desc {
+.footer-text {
     color: #d9e2ff;
     font-size: 16px;
     line-height: 1.6;
     margin: 14px 0 20px;
 }
 
-.footer-contact-line {
+.footer-socials {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 12px;
-    margin-bottom: 16px;
-    color: white;
-    font-weight: 800;
-}
-
-.footer-mini-icon {
-    width: 36px;
-    height: 36px;
-    border-radius: 8px;
-    background: var(--blue-main);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 18px;
-    flex-shrink: 0;
-}
-
-.footer-social-row {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
+    margin-top: 18px;
     margin-bottom: 20px;
 }
 
-.footer-social-btn {
-    width: 38px;
-    height: 38px;
-    border-radius: 8px;
-    background: var(--blue-main);
+.footer-socials a {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
     color: white;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 900;
+    font-weight: 700;
     transition: 0.2s;
 }
 
-.footer-social-btn:hover {
+.footer-socials a:hover {
     background: var(--yellow);
     color: var(--blue-dark);
 }
 
-.footer-copy {
+.copyright {
     color: #b9c7f1;
     margin-top: 8px;
-}
-
-.footer-links-box h3 {
-    color: white;
-    margin-top: 0;
-    margin-bottom: 18px;
 }
 
 .footer-links {
@@ -878,9 +766,7 @@ table.compact-table td {
     .cards-3,
     .stats-grid,
     .kits-grid,
-    .contact-grid,
-    .footer-grid,
-    .footer-modern {
+    .footer-grid {
         grid-template-columns: 1fr;
     }
 
@@ -892,9 +778,7 @@ table.compact-table td {
     .slide img {
         height: 320px;
     }
-}
 
-@media (max-width: 900px) {
     .contact-card-modern {
         grid-template-columns: 1fr;
     }
@@ -914,7 +798,8 @@ table.compact-table td {
         min-height: 460px;
     }
 
-    .hero h1 {
+    .hero h1,
+    .contact-title {
         font-size: 34px;
     }
 
@@ -927,12 +812,12 @@ table.compact-table td {
         font-size: 14px;
     }
 
-    .contact-hero-content {
-        padding: 34px 24px;
-    }
-
     .match-card {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .contact-hero-inner {
+        padding: 48px 0;
     }
 }

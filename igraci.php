@@ -51,7 +51,7 @@ $result = $conn->query($sql);
                                 <td><?php echo htmlspecialchars($row['zapoceo_utakmicu']); ?></td>
                                 <td><?php echo htmlspecialchars($row['usao_s_klupe']); ?></td>
                                 <td>
-                                    <?php if ($row['status_u_klubu'] === 'otisao'): ?>
+                                    <?php if ($row['status_u_klubu'] === 'otišao'): ?>
                                         <span class="status-otisao"><?php echo htmlspecialchars($row['status_u_klubu']); ?></span>
                                     <?php else: ?>
                                         <span class="status-aktivan"><?php echo htmlspecialchars($row['status_u_klubu']); ?></span>

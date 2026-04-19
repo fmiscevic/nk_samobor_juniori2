@@ -42,7 +42,7 @@ LIMIT 5;
 -- 7. IGRACI KOJI SU OTIŠLI
 SELECT ime, prezime, godiste, broj_dresa, primarna_pozicija
 FROM igraci
-WHERE status_u_klubu = 'otisao'
+WHERE status_u_klubu = 'otišao'
 ORDER BY prezime, ime;
 
 -- 8. AKTIVNO OSOBLJE
@@ -54,7 +54,7 @@ ORDER BY uloga, prezime, ime;
 -- 9. BIVSE OSOBLJE
 SELECT ime, prezime, uloga, status_u_klubu
 FROM osoblje
-WHERE status_u_klubu = 'otisao'
+WHERE status_u_klubu = 'otišao'
 ORDER BY uloga, prezime, ime;
 
 -- 10. SVE ODIGRANE UTAKMICE SORTIRANE PO KOLU

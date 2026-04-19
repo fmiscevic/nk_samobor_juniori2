@@ -127,7 +127,7 @@ $stat = $result_statistika ? $result_statistika->fetch_assoc() : null;
                         <p><strong>Kolo:</strong> <?php echo htmlspecialchars($zadnja['kolo']); ?></p>
                         <p><strong>Protivnik:</strong> <?php echo htmlspecialchars($zadnja['protivnik']); ?></p>
                         <p><strong>Rezultat:</strong> <?php echo htmlspecialchars($zadnja['golovi_samobor'] . ':' . $zadnja['golovi_protivnik']); ?></p>
-                        <p><strong>Status:</strong> Domaćin </p>
+                        <p><strong>Status:</strong> Odigrano </p>
                         <p><strong>Datum:</strong> <?php echo htmlspecialchars($zadnja['datum_vrijeme']); ?></p>
                     </div>
                 </div>
