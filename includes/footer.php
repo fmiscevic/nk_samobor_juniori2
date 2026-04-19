@@ -1,3 +1,5 @@
+</main>
+
 <footer class="site-footer">
     <div class="container footer-grid">
         <div class="footer-left">
@@ -11,16 +13,16 @@
             <p><strong>Adresa:</strong> Ulica Andrije Hebranga 45, 10430 Samobor</p>
 
             <div class="footer-socials">
-                <a href="https://www.instagram.com/nksamobor/" target="_blank">Instagram</a>
-                <a href="https://www.facebook.com/nksamobor1925" target="_blank">Facebook</a>
-                <a href="https://www.tiktok.com/@nksamobor" target="_blank">TikTok</a>
+                <a href="https://www.instagram.com/nksamobor/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.facebook.com/nksamobor1925" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.tiktok.com/@nksamobor" target="_blank" rel="noopener noreferrer">TikTok</a>
             </div>
 
-            <p class="copyright">© 2026 NK Samobor</p>
+            <p class="copyright">© 2026 NK Samobor - Juniori 2</p>
         </div>
 
         <div class="footer-right">
-            <h3>Stranice</h3>
+            <h2 class="footer-heading">Stranice</h2>
             <ul class="footer-links">
                 <li><a href="index.php">Početna</a></li>
                 <li><a href="o-ekipi.php">O ekipi</a></li>
@@ -33,7 +35,7 @@
         </div>
     </div>
 </footer>
-</main>
+
 <script src="js/main.js"></script>
 </body>
 </html>

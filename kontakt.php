@@ -13,11 +13,13 @@
     </div>
 </section>
 
-<section class="section">
+<section class="section" aria-labelledby="kontakt-podaci">
     <div class="container">
+        <h2 id="kontakt-podaci" class="sr-only">Kontakt podaci</h2>
+
         <div class="contact-card-modern">
             <div class="contact-card-left">
-                <span class="contact-section-label">KONTAKTI</span>
+                <p class="contact-section-label">KONTAKTI</p>
 
                 <div class="contact-item">
                     <div class="contact-icon-circle">✉</div>
@@ -41,10 +43,9 @@
                 </div>
 
                 <div class="contact-socials">
-                    <a href="https://www.tiktok.com/" target="_blank" class="social-btn">TikTok</a>
-                    <a href="https://www.facebook.com/" target="_blank" class="social-btn">Facebook</a>
-                    <a href="https://www.instagram.com/" target="_blank" class="social-btn">Instagram</a>
-                    <a href="https://www.youtube.com/" target="_blank" class="social-btn">YouTube</a>
+                    <a href="https://www.tiktok.com/@nksamobor" target="_blank" rel="noopener noreferrer" class="social-btn">TikTok</a>
+                    <a href="https://www.facebook.com/nksamobor1925" target="_blank" rel="noopener noreferrer" class="social-btn">Facebook</a>
+                    <a href="https://www.instagram.com/nksamobor/" target="_blank" rel="noopener noreferrer" class="social-btn">Instagram</a>
                 </div>
             </div>
 
@@ -55,10 +56,10 @@
     </div>
 </section>
 
-<section class="section">
+<section class="section" aria-labelledby="lokacija-kluba">
     <div class="container">
         <div class="contact-map-card">
-            <span class="contact-section-label">LOKACIJA KLUBA</span>
+            <h2 id="lokacija-kluba" class="map-heading">Lokacija kluba</h2>
             <p class="contact-map-text">
                 Lokacija sportskog centra i terena NK Samobor prikazana je na karti ispod.
             </p>
@@ -66,12 +67,14 @@
             <div class="map-wrap">
                 <iframe
                     src="https://www.google.com/maps?q=SC%20Samobor%2C%20Samobor&output=embed"
-                    width="100%"
+                    class="map-frame"
+                    width="1200"
                     height="420"
                     style="border:0;"
-                    allowfullscreen=""
+                    allowfullscreen
                     loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Lokacija NK Samobor na karti">
                 </iframe>
             </div>
         </div>
