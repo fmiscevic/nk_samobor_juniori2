@@ -36,7 +36,7 @@ $zadnja = $result_zadnja ? $result_zadnja->fetch_assoc() : null;
 
 $sql_sljedeca = "SELECT kolo, datum_vrijeme, protivnik, lokacija, domacin_gost
                  FROM utakmice
-                 WHERE datum_vrijeme > NOW()
+                 WHERE datum_vrijeme > '2026-04-16'
                  ORDER BY datum_vrijeme ASC
                  LIMIT 1";
 $result_sljedeca = $conn->query($sql_sljedeca);
